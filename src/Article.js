@@ -7,7 +7,7 @@ const Article = (props) =>{
                   <h1>{article.title}</h1>
                   <p>{article.body}</p>
                   <p>{article.author}</p>
-                  <button>Delete article with id {article.id}</button>
+                  <button onClick={() => props.handleDelete(article.id)}>Delete article with id {article.id}</button>
               </div>
           )
       });
